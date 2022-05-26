@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Profile - Rohit Sharma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <style>
+        header {
+            letter-spacing: 1px;
+            word-spacing: 0px;
+            color: rgb(10, 78, 78);
+            font-family: "Sofia", sans-serif;
+            text-align: center;
+        }
+        nav {
+            font-family: "Trirong", sans-serif; 
+            font-weight: bolder;
+            font-size: larger;
+            text-shadow: 5px 5px 5px rgb(130, 135, 136);
+            padding-top: 10px;
+        }
+        #contact_info{
+            box-shadow: 5px 5px 5px rgb(127, 111, 111);
+            text-align: right;
+            padding-right: 30px;
+        }
+        .contact_name {
+            font-weight: bold;
+            font-size: large;
+            color: rgb(10, 78, 78);
+        }
+        a.naukri:active{
+            background-color: yellow;
+        }
+        /* a.naukri::after{
+            content: " <-This is Nuakri Link";
+        } */
+        li{
+            display: inline-block;
+            width:100px;
+            height: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- This is header section -->
+    <header>
+        <div id="contact_info">
+            <i class="fa fa-user-circle-o" style="color:rgb(10, 78, 78)"></i>  Mohit Sharma &nbsp;&nbsp; | &nbsp;&nbsp;
+            <i class="fa fa-phone-square" style="color: rgb(10, 78, 78);"></i> +91 5678 90 4567 &nbsp;&nbsp; | &nbsp;&nbsp;
+            <i class="fa fa-envelope" style="color: rgb(10, 78, 78);"></i> mohit.sharma@gmail.com
+        </div>
+    </header>
+
+    <!-- This is navigation section -->
+    <nav>
+        <a href="home.html" target="my_frame"> Home</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="education.html" target="my_frame">  Education</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="project.html" target="my_frame"> Project</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="tech_stack.html" target="my_frame"> Technology Stack</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="hobbies.html" target="my_frame"> Hobbies</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="personal_details.html" target="my_frame"> Personal Details</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="achievements.html" target="my_frame"> ACHIEVEMENTS</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="extra_activities.html" target="my_frame"> EXTA ACTIVITIES</a>
+    </nav>
+
+    <!-- This is body section where we will load our page using iframe tag -->
+    <div>
+        <iframe width="850px" height="550px" name="my_frame" src="home.html" style="border: none;">
+        </iframe>
+
+    </div>
+
+    <!-- This is footer section -->
+    <footer>
+        <ul>
+            <li>Other Profiles </li>
+            <li><a href="https://www.naukri.com/" target="_blank" class="naukri">  Naukri </a>  </li>
+            <li> <a href="https://github.com/" target="_blank"> GIT </a></li>
+            <li> <a href="https://www.linkedin.com/signup" target="_blank"> LinkedIn </a></li>
+        <ul>
+    </footer>
+
+</body>
+
+</html>
